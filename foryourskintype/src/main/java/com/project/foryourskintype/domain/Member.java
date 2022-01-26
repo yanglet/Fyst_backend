@@ -13,7 +13,6 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
     private String name;
-    private String price;
     private int age;
     private String gender;
     private String email;
