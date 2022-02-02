@@ -9,6 +9,9 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.project.foryourskintype.domain.ItemFeature.오일형;
+import static com.project.foryourskintype.domain.SkinType.복합성;
+
 @Entity
 @Getter
 @Setter
@@ -46,6 +49,11 @@ public class Member {
         this.phoneNumber = phoneNumber;
     }
 
-    public Member(){}
+    public static Member createNullMember(){
+        return new Member("", 0, "", "",
+                "", "");
+    }
+
+    protected Member(){}
 
 }

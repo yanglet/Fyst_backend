@@ -30,7 +30,7 @@ public class JPAItemService implements ItemService{
 
     @Override
     public Item findOne(Long id) {
-        return itemRepository.findOne(id).orElse(new Item());
+        return itemRepository.findOne(id).orElse(Item.createNullItem());
     }
 
     @Override

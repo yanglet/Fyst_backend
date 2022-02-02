@@ -2,14 +2,12 @@ package com.project.foryourskintype.controller;
 
 import com.project.foryourskintype.domain.Member;
 import com.project.foryourskintype.dto.*;
-import com.project.foryourskintype.repository.MemberRepository;
 import com.project.foryourskintype.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 import java.util.List;
@@ -61,11 +59,9 @@ public class MemberController {
     @PostMapping("login") //로그인 API
     public Result login(@RequestBody MemberLoginRequest memberLoginRequest, HttpServletRequest request) {
         //클라이언트랑 변수 맞춘것 Email, Password라고 보면됨
-        int loginResult = memberService.Login(memberLoginRequest.getUserId(), memberLoginRequest.getUserPwLogin(), request);
-        HttpSession session = request.getSession();
+        String sessionId = memberService.Login(memberLoginRequest.getUserId(), memberLoginRequest.getUserPwLogin(), request);
         Member findMember = memberService.findByEmail(memberLoginRequest.getUserId());
 
-        return new Result(new MemberLoginResponse(findMember,
-                session.getAttribute(memberLoginRequest.getUserId()).toString()));
+        return new Result(new MemberLoginResponse(findMember, sessionId));
     }
 }

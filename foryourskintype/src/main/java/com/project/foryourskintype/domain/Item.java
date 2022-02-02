@@ -5,6 +5,9 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+import static com.project.foryourskintype.domain.ItemFeature.오일형;
+import static com.project.foryourskintype.domain.SkinType.복합성;
+
 @Entity
 @Getter @Setter
 public class Item {
@@ -44,7 +47,11 @@ public class Item {
         this.itemFeature = itemFeature;
         this.skinType = skinType;
     }
+    public static Item createNullItem(){
+        return new Item("", "", "", "",
+                "", "", "", 오일형, 복합성);
+    }
 
-    public Item(){}
+    protected Item(){}
 
 }
