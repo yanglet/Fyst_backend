@@ -1,11 +1,9 @@
 package com.project.foryourskintype.service;
 
 import com.project.foryourskintype.domain.Item;
-import com.project.foryourskintype.domain.ItemFeature;
 import com.project.foryourskintype.domain.SkinType;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface ItemService {
     Long save(Item item);

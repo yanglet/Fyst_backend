@@ -24,19 +24,19 @@ public class JPAMemberService implements MemberService {
     @Override
     public Member findById(Long id) {
         Optional<Member> findMember = memberRepository.findById(id);
-        return findMember.orElse(null);
+        return findMember.orElse(new Member());
     }
 
     @Override
     public Member findByName(String name) {
         Optional<Member> findMember = memberRepository.findByName(name);
-        return findMember.orElse(null);
+        return findMember.orElse(new Member());
     }
 
     @Override
     public Member findByEmail(String email) {
         Optional<Member> findMember = memberRepository.findByEmail(email);
-        return findMember.orElse(null);
+        return findMember.orElse(new Member());
     }
 
     @Override

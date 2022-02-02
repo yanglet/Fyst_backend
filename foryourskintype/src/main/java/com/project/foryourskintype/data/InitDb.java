@@ -44,6 +44,7 @@ public class InitDb {
 
             String path = new File("").getAbsolutePath()
                     + "\\src\\main\\java\\com\\project\\foryourskintype\\data\\itemdata.json";
+            System.out.println("path = " + path);
             JSONArray jsonList = (JSONArray) new JSONParser().parse(new FileReader(path));
 
             for (Object o : jsonList) { //상품정보 초기화

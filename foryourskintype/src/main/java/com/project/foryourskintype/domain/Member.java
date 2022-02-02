@@ -46,6 +46,6 @@ public class Member {
         this.phoneNumber = phoneNumber;
     }
 
-    protected Member(){}
+    public Member(){}
 
 }

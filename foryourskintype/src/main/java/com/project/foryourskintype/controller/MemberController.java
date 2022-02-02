@@ -2,6 +2,7 @@ package com.project.foryourskintype.controller;
 
 import com.project.foryourskintype.domain.Member;
 import com.project.foryourskintype.dto.*;
+import com.project.foryourskintype.repository.MemberRepository;
 import com.project.foryourskintype.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.Errors;
@@ -23,7 +24,7 @@ public class MemberController {
     private final MemberService memberService;
 
     @GetMapping("members/only")
-    public Result readAll(){ //모든 회원 정보 조회 API (장바구니 정보 미포함)
+    public Result readAll() { //모든 회원 정보 조회 API (장바구니 정보 미포함)
         List<MemberDto> collect = memberService.findAll()
                 .stream()
                 .map(m -> new MemberDto(m))
@@ -43,8 +44,8 @@ public class MemberController {
 
 
     @PostMapping("signup") //회원가입 API
-    public Long join(@RequestBody @Valid MemberDto memberDto, Errors errors){
-        if(errors.hasErrors()){
+    public Long join(@RequestBody @Valid MemberDto memberDto, Errors errors) {
+        if (errors.hasErrors()) {
             return null;
         }
         return memberService.join(new Member(memberDto.getId(),
@@ -58,7 +59,7 @@ public class MemberController {
 
 
     @PostMapping("login") //로그인 API
-    public Result login(@RequestBody MemberLoginRequest memberLoginRequest, HttpServletRequest request){
+    public Result login(@RequestBody MemberLoginRequest memberLoginRequest, HttpServletRequest request) {
         //클라이언트랑 변수 맞춘것 Email, Password라고 보면됨
         int loginResult = memberService.Login(memberLoginRequest.getUserId(), memberLoginRequest.getUserPwLogin(), request);
         HttpSession session = request.getSession();

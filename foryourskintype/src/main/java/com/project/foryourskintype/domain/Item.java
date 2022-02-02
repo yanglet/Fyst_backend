@@ -45,6 +45,6 @@ public class Item {
         this.skinType = skinType;
     }
 
-    protected Item(){}
+    public Item(){}
 
 }
