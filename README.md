@@ -69,7 +69,13 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
   ![foryourskintype_entity2](https://user-images.githubusercontent.com/96788792/152382220-f5b2dc75-3e25-4f2f-857e-d15612e61db9.PNG)
     
 </details>
-
+<details>
+  <summary>전반적인 모든 기능 구현</summary>
+	- session 방식을 통한 로그인
+	- 회원, 상품, 장바구니상품 API 구현
+	- 데이터 수집 (데이터 크롤링 + 노동 ..)
+    
+</details>
 
 
 <br />
@@ -98,10 +104,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 <br />
 
 ### 배운점🧐
-- 프론트 & 백엔드 배경지식의 차이로 인한 커뮤니케이션의 어려움이 있었지만,
-이해도를 향상시키기 위해 생소한 단어들을 중점으로 서치하여, 서로의 개발환경을 이해하려고 노력했다.      
-  - e.g.       
-  프론트의 입장에서 `Entity`가 무엇인지 몰라서 백엔드와의 소통에 어려움이 있었다.    
-  프론트 쪽에서 몰랐던 백엔드 단어를 중점으로 구글링을 하여 보다 원활한 의사소통을 가능케하였다.     
+- 프론트엔드 & 백엔드 간의 의사소통 능력 향상
+- CORS이슈 @CrossOrigin 어노테이션으로 해결     
 
 <br />
