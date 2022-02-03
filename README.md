@@ -98,7 +98,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 <br />
 
 
-## 💡 프로젝트를 통해 느낌점 
+## 💡 프로젝트를 통해 느점 
 <br />
 
 ### 배운점🧐
