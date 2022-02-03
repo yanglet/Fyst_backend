@@ -29,7 +29,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 <br />
 <br />
 
-## 💡 기술 stack
+## 💡 My 기술 stack
 
 <br />
 
@@ -39,7 +39,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 - `Spring Boot`
 - `JPA`
 - `MySQL`
-- `JUnit5`
 - `Gradle`
 
 
