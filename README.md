@@ -69,11 +69,11 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
   ![foryourskintype_entity2](https://user-images.githubusercontent.com/96788792/152382220-f5b2dc75-3e25-4f2f-857e-d15612e61db9.PNG)
     
 </details>
+
 ### 전반적인 모든 기능 구현
 - session 방식을 통한 로그인
-- 회원, 상품, 장바구니상품 API 구현
+- 회원, 상품, 장바구니 상품 API 구현
 - 데이터 수집 (데이터 크롤링 + 노동 ..)
-
 
 <br />
 <br />
