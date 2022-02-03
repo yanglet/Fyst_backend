@@ -86,10 +86,9 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <!-- 백엔드 -->
 
-[______ Section]
-
-	✅  
-	✅ 
+	✅  피부 테스트를 통해 선정한 4가지 브랜드의 맞춤형 스킨 케어 제품을 제공
+	✅  4가지 브랜드의 베스트 셀러들을 보여주는 기능
+	✅  로그인하여 장바구니로 원하는 품목 관리가능
 
 
 <br />
