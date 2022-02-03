@@ -40,6 +40,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 - `JPA`
 - `MySQL`
 - `Gradle`
+- `Postman`
 
 
 <br />
