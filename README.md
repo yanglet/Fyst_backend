@@ -64,9 +64,8 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 <br />
 
 <details>
-  <summary>CLICK ME!</summary>
-
-  - cf. 
+  <summary>엔티티 설계(UML)</summary>
+ 
   ![foryourskintype_entity2](https://user-images.githubusercontent.com/96788792/152382220-f5b2dc75-3e25-4f2f-857e-d15612e61db9.PNG)
     
 </details>
