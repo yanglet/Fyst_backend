@@ -59,7 +59,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 
 
-## 💡 프로젝트 구조
+## 💡 내가 한 것
 
 <br />
 
@@ -67,11 +67,8 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
   <summary>CLICK ME!</summary>
 
   - cf. 
-  <img src="" alt="" style="" />
-  <img src="" alt="" style="" />
-  <img src="" alt="" style="" />
+  ![foryourskintype_entity2](https://user-images.githubusercontent.com/96788792/152382220-f5b2dc75-3e25-4f2f-857e-d15612e61db9.PNG)
     
-
 </details>
 
 
