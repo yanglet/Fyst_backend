@@ -76,6 +76,8 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 - 회원, 상품, 장바구니 상품 API 구현 (Postman으로 테스트하며 진행)
 - 데이터 수집 (데이터 크롤링 + 노동 ..)
 
+### 팀원들 멘탈 케어
+
 <br />
 <br />
 <br />
