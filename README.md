@@ -27,7 +27,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br />
 <br />
-<br />
 
 ## 💡 My 기술 stack
 
@@ -54,9 +53,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br />
 <br />
-<br />
-
-
 
 
 ## 💡 내가 한 것
@@ -81,7 +77,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br />
 <br />
-<br />
 
 ## 💡 프로젝트 주요 서비스 
 
@@ -95,7 +90,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 	✅  로그인하여 장바구니로 원하는 품목 관리가능
 
 
-<br />
 <br />
 <br />
 
