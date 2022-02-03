@@ -74,7 +74,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 ### 전반적인 모든 기능 구현
 - session 방식을 통한 로그인
-- 회원, 상품, 장바구니 상품 API 구현
+- 회원, 상품, 장바구니 상품 API 구현 (Postman으로 테스트하며 진행)
 - 데이터 수집 (데이터 크롤링 + 노동 ..)
 
 <br />
