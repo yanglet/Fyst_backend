@@ -27,7 +27,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br />
 <br />
-<br />
 
 ## 💡 My 기술 stack
 
@@ -54,9 +53,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br />
 <br />
-<br />
-
-
 
 
 ## 💡 내가 한 것
@@ -81,7 +77,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br />
 <br />
-<br />
 
 ## 💡 프로젝트 주요 서비스 
 
@@ -97,7 +92,6 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br />
 <br />
-<br />
 
 
 ## 💡 프로젝트를 통해 느점 
@@ -105,7 +99,12 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 ### 배운점🧐
 - 프론트엔드 & 백엔드 간의 의사소통 능력 향상
+- Git, notion등을 활용한 협업 방법을 배울 수 있었다
 - CORS이슈 @CrossOrigin 어노테이션으로 해결
-- 여러 연관관계에 있는 객체를 조회할때 무한으로 순환되며 조회가 되는 이슈 @JsonIgnore, Dto로 변환 하는 방식으로      
+- 여러 연관관계에 있는 객체를 조회할때 무한으로 순환되며 조회가 되는 이슈 @JsonIgnore, Dto로 변환 하는 방식으로 해결
+
+### 아쉬운점
+- git branch 전략을 잘 활용했으면 좋았을 것 같았다. (한 브랜치로 이용할 경우 많은 충돌이나 여러 이슈들이 많이 생겼었다.)
+- jwt 방식 로그인을 도입했으면 좋았을 것 같았다.
 
 <br />
