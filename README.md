@@ -78,20 +78,22 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 <br />
 <br />
 
-## 💡 프로젝트 주요 서비스 
+## 💡 프로젝트 주요 서비스 및 화면
 
 <br/>
 
-### 프로젝트 화면
+#### 프로젝트 화면
 
 <details>
   <summary>Click Me !</summary>
 	
   ![home](https://user-images.githubusercontent.com/96788792/152678692-a6ceba53-bc1c-43c4-81dd-970366c66ce2.PNG)
+  ![bestseller](https://user-images.githubusercontent.com/96788792/152678748-9e6e9641-40ee-4101-aae5-034e7a73b38f.PNG)
+  ![skintypetest](https://user-images.githubusercontent.com/96788792/152678754-e482f1ae-7a1c-4898-8342-da682203eace.PNG)
+  ![testresult](https://user-images.githubusercontent.com/96788792/152678758-0e987886-968d-4a15-9087-88ceb3de3b4d.PNG)
 	
 
 </details>
-
 
 <!-- 백엔드 -->
 
