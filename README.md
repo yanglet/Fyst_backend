@@ -82,7 +82,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br/>
 
-#### 프로젝트 화면
+####  화면
 
 <details>
   <summary>Click Me !</summary>
@@ -94,6 +94,8 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 	
 
 </details>
+
+####  주요 서비스
 
 <!-- 백엔드 -->
 
