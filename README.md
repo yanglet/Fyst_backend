@@ -82,6 +82,18 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 <br/>
 
+### 프로젝트 화면
+
+<details>
+  <summary>Click Me !</summary>
+	
+	![홈화면](https://user-images.githubusercontent.com/96788792/152678563-52334f5c-87cd-491e-9dd1-95d755041363.PNG)
+	![베스트셀러화면](https://user-images.githubusercontent.com/96788792/152678568-094aebfe-a925-4c20-8c39-d495770f257c.PNG)
+	![피부테스스화면](https://user-images.githubusercontent.com/96788792/152678573-c775b2f1-34da-40d7-b06c-15033d9e9da5.PNG)
+	![피부테스트결과화면](https://user-images.githubusercontent.com/96788792/152678579-737acb95-19b6-458a-8c1e-55e855710a00.PNG)
+
+</details>
+
 
 <!-- 백엔드 -->
 
