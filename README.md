@@ -87,8 +87,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 <details>
   <summary>Click Me !</summary>
 	
-	![home](https://user-images.githubusercontent.com/96788792/152678642-8e529eda-b7db-4e5e-b4a2-8022c861be1b.PNG)
-
+![home](https://user-images.githubusercontent.com/96788792/152678692-a6ceba53-bc1c-43c4-81dd-970366c66ce2.PNG)
 	
 
 </details>
