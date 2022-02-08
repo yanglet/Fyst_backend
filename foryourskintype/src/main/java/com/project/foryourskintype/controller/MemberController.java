@@ -8,6 +8,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
 import java.util.List;
@@ -41,8 +42,8 @@ public class MemberController {
     }
 
     @PostMapping("mypage")
-    public MemberDto readMyPage(@RequestBody MemberMyPageRequest memberMyPageRequest){
-        return new MemberDto(memberService.findByEmail(memberMyPageRequest.getSessionId()));
+    public MemberDto readMyPage(HttpSession session){
+        return new MemberDto(memberService.findByEmail(session.getAttribute("key").toString()));
     }
 
     @PostMapping("signup") //회원가입 API
