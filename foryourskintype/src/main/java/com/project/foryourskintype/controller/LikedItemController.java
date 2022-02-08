@@ -7,6 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,10 +20,10 @@ public class LikedItemController {
 
     private final LikedItemRepository likedItemRepository;
 
-    @PostMapping("items/favorites") //회원(email -> 세션아이디)에 따른 장바구니 조회 API
-    public Result readLikedItemsByMember(@RequestBody LikedItemReadRequest likedItemReadRequest){
-
-        List<LikedItemDto> collect = likedItemRepository.findAllByEmail(likedItemReadRequest.getEmail())
+    @PostMapping("items/favorites")
+    public Result readLikedItemsByMember(HttpSession session){
+        System.out.println("session = " + session.getAttribute("key"));
+        List<LikedItemDto> collect = likedItemRepository.findAllByEmail(session.getAttribute("key").toString())
                 .stream()
                 .map(l -> new LikedItemDto(l))
                 .collect(Collectors.toList());

@@ -63,9 +63,9 @@ public class MemberController {
     @PostMapping("login") //로그인 API
     public Result login(@RequestBody MemberLoginRequest memberLoginRequest, HttpServletRequest request) {
         //클라이언트랑 변수 맞춘것 Email, Password라고 보면됨
-        String sessionId = memberService.Login(memberLoginRequest.getUserId(), memberLoginRequest.getUserPwLogin(), request);
+        int loginNum = memberService.Login(memberLoginRequest.getUserId(), memberLoginRequest.getUserPwLogin(), request);
         Member findMember = memberService.findByEmail(memberLoginRequest.getUserId());
 
-        return new Result(new MemberLoginResponse(findMember, sessionId));
+        return new Result(new MemberLoginResponse(findMember));
     }
 }
