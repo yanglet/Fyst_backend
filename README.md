@@ -71,17 +71,30 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 ### 전반적인 모든 기능 구현
 - session 방식을 통한 로그인
 - 회원, 상품, 장바구니 상품 API 구현 (Postman으로 테스트하며 진행)
-- 데이터 수집 (데이터 크롤링 + 노동 ..)
+- 데이터 수집 (데이터 크롤링 + 노동 .. -> Jsoup라이브러리를 이용했는데, robots.txt로 막혀있어서인지 크롤링이 안되는 항목이 많았음)
 
 <!-- ### 팀원들 멘탈 케어 -->
 
 <br />
 <br />
 
-## 💡 프로젝트 주요 서비스 
+## 💡 프로젝트 주요 서비스 및 화면
 
 <br/>
 
+####  화면
+<details>
+  <summary>Click Me !</summary>
+	
+  ![home](https://user-images.githubusercontent.com/96788792/152678692-a6ceba53-bc1c-43c4-81dd-970366c66ce2.PNG)
+  ![bestseller](https://user-images.githubusercontent.com/96788792/152678748-9e6e9641-40ee-4101-aae5-034e7a73b38f.PNG)
+  ![skintypetest](https://user-images.githubusercontent.com/96788792/152678754-e482f1ae-7a1c-4898-8342-da682203eace.PNG)
+  ![testresult](https://user-images.githubusercontent.com/96788792/152678758-0e987886-968d-4a15-9087-88ceb3de3b4d.PNG)
+	
+
+</details>
+
+####  주요 서비스
 
 <!-- 백엔드 -->
 
@@ -99,7 +112,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 ### 배운점🧐
 - 프론트엔드 & 백엔드 간의 의사소통 능력 향상
-- Git, notion등을 활용한 협업 방법을 배울 수 있었다
+- Git, notion등을 활용한 협업 방법을 배울 수 있었다 https://www.notion.so/6cb50136ec434259ad3e63e2d2cc90d6
 - CORS이슈 @CrossOrigin 어노테이션으로 해결
 - 여러 연관관계에 있는 객체를 조회할때 무한으로 순환되며 조회가 되는 이슈 @JsonIgnore, Dto로 변환 하는 방식으로 해결
 
