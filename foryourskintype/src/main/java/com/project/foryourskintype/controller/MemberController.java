@@ -41,7 +41,7 @@ public class MemberController {
         return new Result(collect);
     }
 
-    @PostMapping("mypage") //get으로 바꾸자
+    @GetMapping("mypage")
     public MemberDto readMyPage(HttpSession session){
         return new MemberDto(memberService.findByEmail(session.getAttribute("key").toString()));
     }

@@ -22,7 +22,7 @@ public class LikedItemController {
     private final LikedItemRepository likedItemRepository;
     private final MemberService memberService;
 
-    @PostMapping("items/favorites") //get으로 바꾸자
+    @GetMapping("items/favorites")
     public Result readLikedItemsByMember(HttpSession session){
         System.out.println("session = " + session.getAttribute("key"));
         List<LikedItemDto> collect = likedItemRepository.findAllByEmail(session.getAttribute("key").toString())
