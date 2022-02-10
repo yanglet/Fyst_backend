@@ -67,7 +67,7 @@ public class ItemController {
 
     @PostMapping("items/brand") //브랜드에 따른 조회 API
     public Result readForBrand(@RequestBody ReadItemBrandRequest readItemBrandRequest){
-        List<ItemDto> collect = itemService.findSkinBrand(readItemBrandRequest.getBrand())
+        List<ItemDto> collect = itemService.findByBrand(readItemBrandRequest.getBrand())
                 .stream()
                 .map(i -> new ItemDto(i))
                 .collect(Collectors.toList());
@@ -76,7 +76,7 @@ public class ItemController {
 
     @PostMapping("items/skintype") //스킨타입에 따른 조회 API
     public Result readForSkinType(@RequestBody ReadItemSkinTypeRequest readItemSkinTypeRequest){
-        List<ItemDto> collect = itemService.findSkinTypeItem(readItemSkinTypeRequest.getSkinType())
+        List<ItemDto> collect = itemService.findBySkinType(readItemSkinTypeRequest.getSkinType())
                 .stream()
                 .map(i -> new ItemDto(i))
                 .collect(Collectors.toList());

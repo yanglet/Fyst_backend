@@ -22,7 +22,7 @@ public class LikedItemController {
     private final LikedItemRepository likedItemRepository;
     private final MemberService memberService;
 
-    @GetMapping("items/favorites")
+    @GetMapping("items/favorites") //장바구니 아이템 조회 API
     public Result readLikedItemsByMember(HttpSession session){
         System.out.println("session = " + session.getAttribute("key"));
         List<LikedItemDto> collect = likedItemRepository.findAllByEmail(session.getAttribute("key").toString())

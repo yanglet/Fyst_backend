@@ -41,9 +41,9 @@ public class MemberController {
         return new Result(collect);
     }
 
-    @GetMapping("mypage")
-    public MemberDto readMyPage(HttpSession session){
-        return new MemberDto(memberService.findByEmail(session.getAttribute("key").toString()));
+    @GetMapping("mypage") //마이페이지 API
+    public Result readMyPage(HttpSession session){
+        return new Result(new MemberMyPageResponse(memberService.findByEmail(session.getAttribute("key").toString())));
     }
 
     @PostMapping("signup") //회원가입 API

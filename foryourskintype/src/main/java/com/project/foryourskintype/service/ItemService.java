@@ -14,6 +14,6 @@ public interface ItemService {
     List<Item> findInItem();
     List<Item> findSiItem();
     List<Item> findBeItem();
-    List<Item> findSkinTypeItem(SkinType skinType);
-    List<Item> findSkinBrand(String brand);
+    List<Item> findBySkinType(SkinType skinType);
+    List<Item> findByBrand(String brand);
 }

@@ -4,6 +4,7 @@ import com.project.foryourskintype.domain.Item;
 import com.project.foryourskintype.domain.SkinType;
 import com.project.foryourskintype.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
+@Slf4j
 public class JPAItemService implements ItemService{
 
     private final EntityManager em;
@@ -67,14 +69,14 @@ public class JPAItemService implements ItemService{
     }
 
     @Override
-    public List<Item> findSkinTypeItem(SkinType skinType) {
+    public List<Item> findBySkinType(SkinType skinType) {
         return em.createQuery("select i from Item i where i.skinType=:skinType", Item.class)
                 .setParameter("skinType", skinType)
                 .getResultList();
     }
 
     @Override
-    public List<Item> findSkinBrand(String brand) {
+    public List<Item> findByBrand(String brand) {
         return em.createQuery("select i from Item i where i.brand=:brand", Item.class)
                 .setParameter("brnad", brand)
                 .getResultList();

@@ -55,7 +55,7 @@ public class JPAMemberRepository implements MemberRepository{
 
     @Override
     public List<Member> findWithLikedItems() {
-        return em.createQuery("select m from Member m" +
+        return em.createQuery("select distinct m from Member m" + //distinct로 pk값이 같은 중복을 없애줌(JPA만세)
                 " join fetch m.likedItems li" +
                 " join fetch li.item i", Member.class)
                 .getResultList();
