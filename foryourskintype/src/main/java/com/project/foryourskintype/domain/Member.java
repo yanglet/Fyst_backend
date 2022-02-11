@@ -16,7 +16,6 @@ public class Member {
     @Column(name = "member_id")
     private Long id;
     private String name;
-    private int age;
     private String gender;
     @Column(unique = true)
     private String email;
@@ -26,19 +25,17 @@ public class Member {
     @OneToMany(mappedBy = "member")
     private List<LikedItem> likedItems = new ArrayList<>();
 
-    public Member(String name, int age, String gender, String email, String password, String phoneNumber) {
+    public Member(String name, String gender, String email, String password, String phoneNumber) {
         this.name = name;
-        this.age = age;
         this.gender = gender;
         this.email = email;
         this.password = password;
         this.phoneNumber = phoneNumber;
     }
 
-    public Member(Long id, String name, int age, String gender, String email, String password, String phoneNumber) {
+    public Member(Long id, String name, String gender, String email, String password, String phoneNumber) {
         this.id = id;
         this.name = name;
-        this.age = age;
         this.gender = gender;
         this.email = email;
         this.password = password;
@@ -46,7 +43,7 @@ public class Member {
     }
 
     public static Member createNullMember(){
-        return new Member("", 0, "", "",
+        return new Member("", "", "",
                 "", "");
     }
 

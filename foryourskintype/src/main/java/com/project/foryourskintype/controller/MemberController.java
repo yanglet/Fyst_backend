@@ -53,7 +53,6 @@ public class MemberController {
         }
         return memberService.join(new Member(memberDto.getId(),
                 memberDto.getName(),
-                memberDto.getAge(),
                 memberDto.getGender(),
                 memberDto.getEmail(),
                 memberDto.getPassword(),

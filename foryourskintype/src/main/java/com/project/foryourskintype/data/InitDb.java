@@ -53,13 +53,11 @@ public class InitDb {
             }
 
             Member member1 = new Member("박유저",
-                    20,
                     "woman",
                     "user1@gmail.com",
                     "user1_password",
                     "01012345678");
             Member member2 = new Member("양글렛",
-                    24,
                     "man",
                     "yanglet@gmail.com",
                     "yanglet_pw",

@@ -1,9 +1,6 @@
 package com.project.foryourskintype.dto;
 
-import com.project.foryourskintype.domain.Item;
 import com.project.foryourskintype.domain.LikedItem;
-import com.project.foryourskintype.domain.Member;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 public class MemberLoginResponse {
     private Long id;
     private String name;
-    private int age;
     private String gender;
     private String email;
     private String password;
@@ -20,7 +19,6 @@ public class MemberLoginResponse {
     public MemberLoginResponse(Member member) {
         this.id = member.getId();
         this.name = member.getName();
-        this.age = member.getAge();
         this.gender = member.getGender();
         this.email = member.getEmail();
         this.password = member.getPassword();
