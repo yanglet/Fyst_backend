@@ -28,7 +28,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 <br />
 <br />
 
-## 💡 My 기술 stack
+## 💡 사용한 기술 stack
 
 <br />
 
