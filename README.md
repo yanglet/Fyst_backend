@@ -21,8 +21,8 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
  
 📌 개발 인원: 프론트엔드 1명, 백엔드 1명
-- [팀장 양** Github](https://github.com/yanglet/for_your_skin_type)
-- [팀원 박** Github](https://github.com/ekfka4863/for_your_skin_type)
+- [팀장 양** Github](https://github.com/yanglet/Fyst_backend)
+- [팀원 박** Github](https://github.com/ekfka4863/for_your_skin_type_F)
 
 <br />
 <br />
