@@ -27,7 +27,7 @@ public class LikedItemController {
         System.out.println("session = " + session.getAttribute("key"));
         List<LikedItemDto> collect = likedItemRepository.findAllByEmail(session.getAttribute("key").toString())
                 .stream()
-                .map(l -> new LikedItemDto(l))
+                .map(LikedItemDto::new)
                 .collect(Collectors.toList());
 
         return new Result(collect);

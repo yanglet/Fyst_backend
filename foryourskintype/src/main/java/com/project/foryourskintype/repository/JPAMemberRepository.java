@@ -11,11 +11,12 @@ import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
-@Transactional
+@Transactional(readOnly = true)
 public class JPAMemberRepository implements MemberRepository{
 
     private final EntityManager em;
 
+    @Transactional
     @Override
     public Long save(Member member) {
         em.persist(member);
@@ -62,6 +63,7 @@ public class JPAMemberRepository implements MemberRepository{
     }
 
 
+    @Transactional
     @Override
     public void delete(Long id) {
         Member findMember = em.find(Member.class, id);

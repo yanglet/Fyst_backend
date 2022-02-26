@@ -4,13 +4,13 @@ import com.project.foryourskintype.domain.Member;
 import com.project.foryourskintype.dto.*;
 import com.project.foryourskintype.service.MemberService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.validation.Errors;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
-import javax.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,7 +26,7 @@ public class MemberController {
     public Result readAll() { //모든 회원 정보 조회 API (장바구니 정보 미포함)
         List<MemberDto> collect = memberService.findAll()
                 .stream()
-                .map(m -> new MemberDto(m))
+                .map(MemberDto::new)
                 .collect(Collectors.toList());
 
         return new Result(collect);
@@ -36,7 +36,7 @@ public class MemberController {
     public Result readByMember() {
         List<MemberWithLikedItem> collect = memberService.findWithLikedItems()
                 .stream()
-                .map(m -> new MemberWithLikedItem(m))
+                .map(MemberWithLikedItem::new)
                 .collect(Collectors.toList());
         return new Result(collect);
     }
@@ -47,16 +47,16 @@ public class MemberController {
     }
 
     @PostMapping("signup") //회원가입 API
-    public Long join(@RequestBody @Valid MemberDto memberDto, Errors errors) {
-        if (errors.hasErrors()) {
-            return null;
+    public Result join(@RequestBody @Validated MemberDto memberDto, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return new Result(bindingResult);
         }
-        return memberService.join(new Member(memberDto.getId(),
+        return new Result(memberService.join(new Member(memberDto.getId(),
                 memberDto.getName(),
                 memberDto.getGender(),
                 memberDto.getEmail(),
                 memberDto.getPassword(),
-                memberDto.getPhoneNumber()));
+                memberDto.getPhoneNumber())));
     }
 
 
@@ -69,7 +69,7 @@ public class MemberController {
         return new Result(new MemberLoginResponse(findMember));
     }
     
-    @PostMapping("logout")
+    @GetMapping("logout")
     public void logout(HttpSession session){
         session.invalidate();
     }

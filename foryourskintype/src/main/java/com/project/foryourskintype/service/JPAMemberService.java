@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-@Transactional
+@Transactional(readOnly = true)
 @Slf4j
 public class JPAMemberService implements MemberService {
 
@@ -38,11 +38,11 @@ public class JPAMemberService implements MemberService {
         return findMember.orElse(Member.createNullMember());
     }
 
+    @Transactional
     @Override
     public Long join(Member member) {
         validateDuplicateMember(member); //중복회원인지(이메일이 같은지) 확인
-        memberRepository.save(member);
-        return member.getId();
+        return memberRepository.save(member);
     }
 
     @Override
@@ -75,6 +75,7 @@ public class JPAMemberService implements MemberService {
         return memberRepository.findWithLikedItems();
     }
 
+    @Transactional
     @Override
     public void delete(Long id) {
         memberRepository.delete(id);

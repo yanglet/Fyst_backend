@@ -24,7 +24,7 @@ public class ItemController {
     public Result readAll(){
         List<ItemDto> collect = itemService.findAll()
                 .stream()
-                .map(i -> new ItemDto(i))
+                .map(ItemDto::new)
                 .collect(Collectors.toList());
         return new Result(collect);
     }
@@ -33,7 +33,7 @@ public class ItemController {
     public Result readDrjartItem(){
         List<ItemDto> collect = itemService.findDrItem()
                 .stream()
-                .map(i -> new ItemDto(i))
+                .map(ItemDto::new)
                 .collect(Collectors.toList());
         return new Result((collect));
     }
@@ -42,7 +42,7 @@ public class ItemController {
     public Result readInnisfreeItem(){
         List<ItemDto> collect = itemService.findInItem()
                 .stream()
-                .map(i -> new ItemDto(i))
+                .map(ItemDto::new)
                 .collect(Collectors.toList());
         return new Result((collect));
     }
@@ -51,7 +51,7 @@ public class ItemController {
     public Result readSidmoolItem(){
         List<ItemDto> collect = itemService.findSiItem()
                 .stream()
-                .map(i -> new ItemDto(i))
+                .map(ItemDto::new)
                 .collect(Collectors.toList());
         return new Result((collect));
     }
@@ -60,7 +60,7 @@ public class ItemController {
     public Result readBeplainItem(){
         List<ItemDto> collect = itemService.findBeItem()
                 .stream()
-                .map(i -> new ItemDto(i))
+                .map(ItemDto::new)
                 .collect(Collectors.toList());
         return new Result((collect));
     }
@@ -69,7 +69,7 @@ public class ItemController {
     public Result readForBrand(@RequestBody ReadItemBrandRequest readItemBrandRequest){
         List<ItemDto> collect = itemService.findByBrand(readItemBrandRequest.getBrand())
                 .stream()
-                .map(i -> new ItemDto(i))
+                .map(ItemDto::new)
                 .collect(Collectors.toList());
         return new Result(collect);
     }
@@ -78,7 +78,7 @@ public class ItemController {
     public Result readForSkinType(@RequestBody ReadItemSkinTypeRequest readItemSkinTypeRequest){
         List<ItemDto> collect = itemService.findBySkinType(readItemSkinTypeRequest.getSkinType())
                 .stream()
-                .map(i -> new ItemDto(i))
+                .map(ItemDto::new)
                 .collect(Collectors.toList());
         return new Result(collect);
     }

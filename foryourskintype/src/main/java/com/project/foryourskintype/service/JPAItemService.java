@@ -20,6 +20,7 @@ public class JPAItemService implements ItemService{
     private final EntityManager em;
     private final ItemRepository itemRepository;
 
+    @Transactional
     @Override
     public Long save(Item item) {
         return itemRepository.save(item);
@@ -35,6 +36,7 @@ public class JPAItemService implements ItemService{
         return itemRepository.findOne(id).orElse(Item.createNullItem());
     }
 
+    @Transactional
     @Override
     public void delete(Long id) {
         itemRepository.delete(id);

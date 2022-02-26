@@ -13,11 +13,12 @@ import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
-@Transactional
+@Transactional(readOnly = true)
 public class JPALikedItemRepository implements LikedItemRepository{
 
     private final EntityManager em;
 
+    @Transactional
     @Override
     public Long save(LikedItem likedItem) {
         em.persist(likedItem);
@@ -47,6 +48,7 @@ public class JPALikedItemRepository implements LikedItemRepository{
     }
 
 
+    @Transactional
     @Override
     public void delete(Item item, Member member) {
         LikedItem likedItem = em.createQuery("select l from LikedItem l" +
