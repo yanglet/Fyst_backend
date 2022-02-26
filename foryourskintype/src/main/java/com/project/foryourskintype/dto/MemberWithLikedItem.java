@@ -31,6 +31,6 @@ public class MemberWithLikedItem {
         this.likedItems = member.getLikedItems()
                 .stream()
                 .map(l -> new LikedItemDto(l))
-        .collect(Collectors.toList());
+                .collect(Collectors.toList());
     }
 }
