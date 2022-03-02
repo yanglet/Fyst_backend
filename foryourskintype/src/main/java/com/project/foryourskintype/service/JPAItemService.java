@@ -80,7 +80,7 @@ public class JPAItemService implements ItemService{
     @Override
     public List<Item> findByBrand(String brand) {
         return em.createQuery("select i from Item i where i.brand=:brand", Item.class)
-                .setParameter("brnad", brand)
+                .setParameter("brand", brand)
                 .getResultList();
     }
 }
