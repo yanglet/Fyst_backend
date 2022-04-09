@@ -16,6 +16,9 @@ public class WebConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/login", "/signup",
                         "/logout", "/items", "/items/drjart",
                         "/items/innisfree", "/items/sidmool", "/items/beplain",
-                        "/items/brand", "/items/skintype");
+                        "/items/brand", "/items/skintype", "/api/usage",
+                        // Swagger 설정
+                        "/swagger-resources/**", "/swagger-ui/**",
+                        "/v2/api-docs");
     }
 }
