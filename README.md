@@ -12,7 +12,7 @@
 <br />
 
 📌 개발 기간 📆 : 
-- 2022.01.05.수요일 - 2022.02.__.__     요일   
+- 2022.01 - 2022.02   
 
 📌 팀 명: 
 <li style="line-height: 50px;">
@@ -69,6 +69,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 
 ### 전반적인 모든 기능 구현
 - session 방식을 통한 로그인
+- 인터셉터, 예외처리 ( ControllerAdvice를 사용 )
 - 회원, 상품, 장바구니 상품 API 구현 (Postman으로 테스트하며 진행)
 - 데이터 수집 (데이터 크롤링 + 노동 .. -> Jsoup라이브러리를 이용했는데, robots.txt로 막혀있어서인지 크롤링이 안되는 항목이 많았음)
 
@@ -116,7 +117,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 - 여러 연관관계에 있는 객체를 조회할때 무한으로 순환되며 조회가 되는 이슈 @JsonIgnore, Dto로 변환 하는 방식으로 해결
 
 ### 아쉬운점
-- git branch 전략을 잘 활용했으면 좋았을 것 같았다. (한 브랜치로 이용할 경우 많은 충돌이나 여러 이슈들이 많이 생겼었다.)
+- git 의 기능들을 제대로 활용하지 못했다. ( issue, PR, branch 전략 등 )
 - jwt 방식 로그인을 도입했으면 좋았을 것 같았다.
 
 <br />
