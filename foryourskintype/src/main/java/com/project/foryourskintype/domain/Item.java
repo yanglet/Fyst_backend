@@ -10,7 +10,7 @@ import static com.project.foryourskintype.domain.SkinType.복합성;
 
 @Entity
 @Getter @Setter
-public class Item {
+public class Item extends BaseEntity{
     @Id @GeneratedValue
     @Column(name = "item_id")
     private Long id;

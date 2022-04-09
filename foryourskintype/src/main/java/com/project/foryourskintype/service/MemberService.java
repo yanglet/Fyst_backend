@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface MemberService {
+    Long save(Member member);
     Member findById(Long id);
     Member findByName(String name);
     Member findByEmail(String email);

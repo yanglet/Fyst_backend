@@ -19,6 +19,10 @@ public class JPAMemberService implements MemberService {
 
     private final MemberRepository memberRepository;
 
+    @Override
+    public Long save(Member member) {
+        return memberRepository.save(member);
+    }
 
     @Override
     public Member findById(Long id) {

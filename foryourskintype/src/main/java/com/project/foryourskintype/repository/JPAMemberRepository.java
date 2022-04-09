@@ -9,9 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
+@Repository
 public class JPAMemberRepository implements MemberRepository{
 
     private final EntityManager em;

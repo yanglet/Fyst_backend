@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Getter @Setter
-public class LikedItem {
+public class LikedItem extends BaseEntity{
     @Id @GeneratedValue
     @Column(name = "likeditem_id")
     private Long id;
