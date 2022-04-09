@@ -72,6 +72,7 @@ Latte는 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS5_pRZ
 - 인터셉터, 예외처리 ( ControllerAdvice를 사용 )
 - 회원, 상품, 장바구니 상품 API 구현 (Postman으로 테스트하며 진행)
 - 데이터 수집 (데이터 크롤링 + 노동 .. -> Jsoup라이브러리를 이용했는데, robots.txt로 막혀있어서인지 크롤링이 안되는 항목이 많았음)
+- Swagger를 통한 api 
 
 <!-- ### 팀원들 멘탈 케어 -->
 
